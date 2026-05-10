@@ -6,7 +6,10 @@
   --color-background: #121412;
   --color-surface: #1E221E;
   --color-text: #D1D1C4;
+  /* Borders, grids, chrome — keep dark */
   --color-muted: #4B5320;
+  /* Secondary copy on dark bg/surface (WCAG-friendly); use text-muted-fg */
+  --color-muted-fg: #a2ad91;
   --color-accent: #FACC15;
   --color-success: #4ADE80;
 
@@ -18,6 +21,11 @@
 }
 
 @layer base {
+  *:where(button, [href], input, textarea, summary, [role="button"], [tabindex]:not([tabindex="-1"])):focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 3px;
+  }
+
   body {
     background-color: var(--color-background);
     color: var(--color-text);

@@ -1,4 +1,8 @@
 node_modules/
+
+# Third-party Cursor skill (reinstall: npx uipro-cli init --ai cursor)
+.cursor/skills/ui-ux-pro-max/
+
 build/
 dist/
 coverage/
