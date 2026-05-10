@@ -91,8 +91,15 @@ function dist2(x1, y1, x2, y2) {
 
 /** Callout-based fallback when radar coords are missing or ambiguous. */
 /** @returns {SiteZone} */
-function classifySiteFromKeywords(titleFrom, titleTo) {
-  const s = `${titleFrom} ${titleTo}`.toLowerCase();
+function classifySiteFromKeywords(titleFrom, titleTo, mapSlug = '') {
+  const tf = String(titleFrom || '');
+  const tt = String(titleTo || '');
+  const s = `${tf} ${tt}`.toLowerCase();
+  const slug = String(mapSlug || '').toLowerCase();
+
+  // Inferno: Hay (pit), Arch/Arches, Library — A-site layer (not B "apts", not generic "arches" mid).
+  if (/\bhay\b/i.test(tt.toLowerCase())) return 'A';
+  if (slug === 'inferno' && /\b(?:arch(?:es)?|library)\b/i.test(s)) return 'A';
 
   // Mirage / common A executes: "connector" alone must not beat these (see Jungle And Connector, Ticket Booth).
   if (/\bjungle\s*(?:and|,|&)?\s*connector\b/i.test(s)) return 'A';
@@ -100,7 +107,7 @@ function classifySiteFromKeywords(titleFrom, titleTo) {
   if (/\btop\s*of\s*ticket\b/i.test(s)) return 'A';
 
   const midRe =
-    /\b(?:mid window|mid doors|top mid|bottom mid|bottom connector|deep stairs|spawn fence|mid|xbox|underpass|catwalk|outside t|quad|boiler|arches|canal|yard|water|hut|lower tunnel|sandwich|elevator|link|lobby|map control|connector)\b/i;
+    /\b(?:mid window|mid doors|top mid|bottom mid|bottom connector|deep stairs|spawn fence|alt mid|mid|xbox|underpass|catwalk|outside t|quad|boiler|canal|yard|water|hut|lower tunnel|sandwich|elevator|link|lobby|map control|connector)\b/i;
   const aRe =
     /\b(?:a site|ticket booth|tetris|kitchen|green|default a|squeaky|altar|temple|jungle|palace|ramp|triple|stairs|moto|balcony|graveyard|a long|a main|fork|cave\s+a|main(?!\s+tunnel))\b/i;
   const bRe =
@@ -126,10 +133,10 @@ function classifySiteFromKeywords(titleFrom, titleTo) {
  * Uses throwTo vs CSNADES radar site anchors, with keyword tie-break.
  * @returns {SiteZone}
  */
-function classifySiteZone(n, radar) {
+function classifySiteZone(n, radar, mapSlug) {
   const tf = String(n.titleFrom || '');
   const tt = String(n.titleTo || '');
-  const kw = classifySiteFromKeywords(tf, tt);
+  const kw = classifySiteFromKeywords(tf, tt, mapSlug);
 
   if (!radar?.aSite || !radar?.bSite) return kw;
   const t = n.throwTo;
@@ -322,7 +329,7 @@ function toLineup(n, /** @type {string} */ mapSlug, radar) {
   const titleTo = String(n.titleTo || '');
   const mp4 = n.assets?.videoHq?.mp4 || n.assets?.videoLq?.mp4 || '';
   const thumb = n.assets?.thumbnail || '';
-  const siteZone = classifySiteZone(n, radar);
+  const siteZone = classifySiteZone(n, radar, mapSlug);
   return {
     id: `cs-${mapSlug}-${slug}`,
     mapId: mapSlug,
