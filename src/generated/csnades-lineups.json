@@ -1,7 +1,7 @@
 {
-  "scrapedAt": "2026-05-10T15:24:19.593Z",
+  "scrapedAt": "2026-05-10T15:44:04.711Z",
   "source": "https://csnades.gg",
-  "lineupCount": 35,
+  "lineupCount": 112,
   "lineups": [
     {
       "id": "cs-mirage-ticket-booth-from-tetris",
@@ -64,6 +64,208 @@
       "sourceUrl": "https://csnades.gg/mirage/ticket-booth-from-a-ramp"
     },
     {
+      "id": "cs-mirage-jungle-from-tetris",
+      "mapId": "mirage",
+      "side": "T",
+      "type": "SMOKE",
+      "title": "Tetris → Jungle",
+      "origin": "TETRIS",
+      "target": "JUNGLE",
+      "thumbnail": "https://assets.csnades.gg/nades/mirage-smoke-5NzRMI354j/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/mirage-smoke-5NzRMI354j/hq.mp4",
+      "difficulty": "MEDIUM",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left.",
+        "Kretanje: stationary.",
+        "Preciznost: precise.",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/mirage/jungle-from-tetris"
+    },
+    {
+      "id": "cs-mirage-market-door-from-back-alley",
+      "mapId": "mirage",
+      "side": "T",
+      "type": "SMOKE",
+      "title": "Back Alley → Market Door",
+      "origin": "BACK ALLEY",
+      "target": "MARKET DOOR",
+      "thumbnail": "https://assets.csnades.gg/nades/mirage-smoke-UJiXtqvbkb/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/mirage-smoke-UJiXtqvbkb/hq.mp4",
+      "difficulty": "MEDIUM",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left+jump.",
+        "Kretanje: stationary.",
+        "Preciznost: precise.",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/mirage/market-door-from-back-alley"
+    },
+    {
+      "id": "cs-mirage-left-arch-from-back-alley",
+      "mapId": "mirage",
+      "side": "T",
+      "type": "SMOKE",
+      "title": "Back Alley → Left Arch",
+      "origin": "BACK ALLEY",
+      "target": "LEFT ARCH",
+      "thumbnail": "https://assets.csnades.gg/nades/mirage-smoke-aBPrOAQ8Nj/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/mirage-smoke-aBPrOAQ8Nj/hq.mp4",
+      "difficulty": "MEDIUM",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left+jump.",
+        "Kretanje: crouched stationary.",
+        "Preciznost: precise.",
+        "Odgovara bounce off 1 referentnih točaka (vidi radar na CSNADES).",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/mirage/left-arch-from-back-alley"
+    },
+    {
+      "id": "cs-mirage-palace-from-outside-market",
+      "mapId": "mirage",
+      "side": "CT",
+      "type": "SMOKE",
+      "title": "Outside Market → Palace",
+      "origin": "OUTSIDE MARKET",
+      "target": "PALACE",
+      "thumbnail": "https://assets.csnades.gg/nades/mirage-smoke-mYfgVqLmrE/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/mirage-smoke-mYfgVqLmrE/hq.mp4",
+      "difficulty": "MEDIUM",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left+jump.",
+        "Kretanje: stationary.",
+        "Preciznost: precise.",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/mirage/palace-from-outside-market"
+    },
+    {
+      "id": "cs-mirage-ticket-booth-from-t-spawn-fence",
+      "mapId": "mirage",
+      "side": "T",
+      "type": "SMOKE",
+      "title": "T Spawn Fence → Ticket Booth",
+      "origin": "T SPAWN FENCE",
+      "target": "TICKET BOOTH",
+      "thumbnail": "https://assets.csnades.gg/nades/mirage-smoke-EG0cY5l7c4/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/mirage-smoke-EG0cY5l7c4/hq.mp4",
+      "difficulty": "MEDIUM",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left+jump.",
+        "Kretanje: stationary.",
+        "Preciznost: precise.",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/mirage/ticket-booth-from-t-spawn-fence"
+    },
+    {
+      "id": "cs-mirage-jungle-and-connector-from-t-roof-b",
+      "mapId": "mirage",
+      "side": "T",
+      "type": "SMOKE",
+      "title": "T Roof → Jungle And Connector",
+      "origin": "T ROOF",
+      "target": "JUNGLE AND CONNECTOR",
+      "thumbnail": "https://assets.csnades.gg/nades/mirage-smoke-R0AVljz79f/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/mirage-smoke-R0AVljz79f/hq.mp4",
+      "difficulty": "MEDIUM",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left.",
+        "Kretanje: stationary.",
+        "Preciznost: precise.",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/mirage/jungle-and-connector-from-t-roof-b"
+    },
+    {
+      "id": "cs-mirage-mid-window-from-t-spawn-b",
+      "mapId": "mirage",
+      "side": "T",
+      "type": "SMOKE",
+      "title": "T Spawn → Mid Window",
+      "origin": "T SPAWN",
+      "target": "MID WINDOW",
+      "thumbnail": "https://assets.csnades.gg/nades/mirage-smoke-3sRuAaqnas/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/mirage-smoke-3sRuAaqnas/hq.mp4",
+      "difficulty": "HARD",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left+jump.",
+        "Kretanje: running.",
+        "Preciznost: very precise.",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/mirage/mid-window-from-t-spawn-b"
+    },
+    {
+      "id": "cs-mirage-mid-window-from-underpass",
+      "mapId": "mirage",
+      "side": "T",
+      "type": "SMOKE",
+      "title": "Underpass → Mid Window",
+      "origin": "UNDERPASS",
+      "target": "MID WINDOW",
+      "thumbnail": "https://assets.csnades.gg/nades/mirage-smoke-cJBJWhl1LR/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/mirage-smoke-cJBJWhl1LR/hq.mp4",
+      "difficulty": "MEDIUM",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left.",
+        "Kretanje: stationary.",
+        "Preciznost: precise.",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/mirage/mid-window-from-underpass"
+    },
+    {
+      "id": "cs-mirage-jungle-and-connector-from-palace",
+      "mapId": "mirage",
+      "side": "T",
+      "type": "SMOKE",
+      "title": "Palace → Jungle And Connector",
+      "origin": "PALACE",
+      "target": "JUNGLE AND CONNECTOR",
+      "thumbnail": "https://assets.csnades.gg/nades/mirage-smoke-TsnQZHobbT/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/mirage-smoke-TsnQZHobbT/hq.mp4",
+      "difficulty": "MEDIUM",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left.",
+        "Kretanje: running.",
+        "Preciznost: precise.",
+        "Odgovara bounce off 1 referentnih točaka (vidi radar na CSNADES).",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/mirage/jungle-and-connector-from-palace"
+    },
+    {
+      "id": "cs-mirage-b-apts-from-market-window",
+      "mapId": "mirage",
+      "side": "CT",
+      "type": "SMOKE",
+      "title": "Market Window → B Apts",
+      "origin": "MARKET WINDOW",
+      "target": "B APTS",
+      "thumbnail": "https://assets.csnades.gg/nades/mirage-smoke-n2xmh8j5FQ/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/mirage-smoke-n2xmh8j5FQ/hq.mp4",
+      "difficulty": "MEDIUM",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left.",
+        "Kretanje: stationary.",
+        "Preciznost: precise.",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/mirage/b-apts-from-market-window"
+    },
+    {
       "id": "cs-mirage-triple-box-from-tetris",
       "mapId": "mirage",
       "side": "T",
@@ -103,6 +305,26 @@
         "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
       ],
       "sourceUrl": "https://csnades.gg/mirage/b-site-from-back-apts"
+    },
+    {
+      "id": "cs-mirage-top-mid-boxes-from-window",
+      "mapId": "mirage",
+      "side": "CT",
+      "type": "HE",
+      "title": "Window → Top Mid Boxes",
+      "origin": "WINDOW",
+      "target": "TOP MID BOXES",
+      "thumbnail": "https://assets.csnades.gg/nades/mirage-he-qwyobfLj4Q/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/mirage-he-qwyobfLj4Q/hq.mp4",
+      "difficulty": "MEDIUM",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left.",
+        "Kretanje: running.",
+        "Preciznost: precise.",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/mirage/top-mid-boxes-from-window"
     },
     {
       "id": "cs-inferno-arches-from-alt-mid",
@@ -165,6 +387,207 @@
       "sourceUrl": "https://csnades.gg/inferno/ct-from-car"
     },
     {
+      "id": "cs-inferno-ct-from-t-spawn",
+      "mapId": "inferno",
+      "side": "T",
+      "type": "SMOKE",
+      "title": "T Spawn → CT",
+      "origin": "T SPAWN",
+      "target": "CT",
+      "thumbnail": "https://assets.csnades.gg/nades/inferno-smoke-xWSXzEwtxB/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/inferno-smoke-xWSXzEwtxB/hq.mp4",
+      "difficulty": "MEDIUM",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left+jump.",
+        "Kretanje: walking.",
+        "Preciznost: precise.",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/inferno/ct-from-t-spawn"
+    },
+    {
+      "id": "cs-inferno-b-site-from-banana",
+      "mapId": "inferno",
+      "side": "T",
+      "type": "SMOKE",
+      "title": "Banana → B Site",
+      "origin": "BANANA",
+      "target": "B SITE",
+      "thumbnail": "https://assets.csnades.gg/nades/inferno-smoke-qNO7ZhaDsF/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/inferno-smoke-qNO7ZhaDsF/hq.mp4",
+      "difficulty": "HARD",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left+jump.",
+        "Kretanje: stationary.",
+        "Preciznost: very precise.",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/inferno/b-site-from-banana"
+    },
+    {
+      "id": "cs-inferno-top-mid-from-t-spawn",
+      "mapId": "inferno",
+      "side": "T",
+      "type": "SMOKE",
+      "title": "T Spawn → Top Mid",
+      "origin": "T SPAWN",
+      "target": "TOP MID",
+      "thumbnail": "https://assets.csnades.gg/nades/inferno-smoke-Yh2HU8M4Vy/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/inferno-smoke-Yh2HU8M4Vy/hq.mp4",
+      "difficulty": "MEDIUM",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left.",
+        "Kretanje: stationary.",
+        "Preciznost: precise.",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/inferno/top-mid-from-t-spawn"
+    },
+    {
+      "id": "cs-inferno-b-entrance-from-moto",
+      "mapId": "inferno",
+      "side": "CT",
+      "type": "SMOKE",
+      "title": "Moto → B Entrance",
+      "origin": "MOTO",
+      "target": "B ENTRANCE",
+      "thumbnail": "https://assets.csnades.gg/nades/inferno-smoke-M2Rp3LbcAE/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/inferno-smoke-M2Rp3LbcAE/hq.mp4",
+      "difficulty": "MEDIUM",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left+jump.",
+        "Kretanje: stationary.",
+        "Preciznost: precise.",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/inferno/b-entrance-from-moto"
+    },
+    {
+      "id": "cs-inferno-arch-from-alt-mid",
+      "mapId": "inferno",
+      "side": "T",
+      "type": "SMOKE",
+      "title": "Alt Mid → Arch",
+      "origin": "ALT MID",
+      "target": "ARCH",
+      "thumbnail": "https://assets.csnades.gg/nades/inferno-smoke-ByTtdpC7XM/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/inferno-smoke-ByTtdpC7XM/hq.mp4",
+      "difficulty": "MEDIUM",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left+jump.",
+        "Kretanje: stationary.",
+        "Preciznost: precise.",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/inferno/arch-from-alt-mid"
+    },
+    {
+      "id": "cs-inferno-hay-from-apts-a",
+      "mapId": "inferno",
+      "side": "T",
+      "type": "SMOKE",
+      "title": "Apts → Hay",
+      "origin": "APTS",
+      "target": "HAY",
+      "thumbnail": "https://assets.csnades.gg/nades/inferno-smoke-vOap5qahQC/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/inferno-smoke-vOap5qahQC/hq.mp4",
+      "difficulty": "MEDIUM",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left.",
+        "Kretanje: stationary.",
+        "Preciznost: precise.",
+        "Odgovara bounce off 1 referentnih točaka (vidi radar na CSNADES).",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/inferno/hay-from-apts-a"
+    },
+    {
+      "id": "cs-inferno-stairs-from-ct-spawn",
+      "mapId": "inferno",
+      "side": "CT",
+      "type": "SMOKE",
+      "title": "CT Spawn → Stairs",
+      "origin": "CT SPAWN",
+      "target": "STAIRS",
+      "thumbnail": "https://assets.csnades.gg/nades/inferno-smoke-ay7l9UkgGA/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/inferno-smoke-ay7l9UkgGA/hq.mp4",
+      "difficulty": "MEDIUM",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left+jump.",
+        "Kretanje: stationary.",
+        "Preciznost: precise.",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/inferno/stairs-from-ct-spawn"
+    },
+    {
+      "id": "cs-inferno-library-from-alt-mid",
+      "mapId": "inferno",
+      "side": "T",
+      "type": "SMOKE",
+      "title": "Alt Mid → Library",
+      "origin": "ALT MID",
+      "target": "LIBRARY",
+      "thumbnail": "https://assets.csnades.gg/nades/inferno-smoke-G1sPcgBbK0/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/inferno-smoke-G1sPcgBbK0/hq.mp4",
+      "difficulty": "MEDIUM",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left+jump.",
+        "Kretanje: stationary.",
+        "Preciznost: precise.",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/inferno/library-from-alt-mid"
+    },
+    {
+      "id": "cs-inferno-arch-from-t-spawn",
+      "mapId": "inferno",
+      "side": "T",
+      "type": "SMOKE",
+      "title": "T Spawn → Arch",
+      "origin": "T SPAWN",
+      "target": "ARCH",
+      "thumbnail": "https://assets.csnades.gg/nades/inferno-smoke-u3NCVJG0JH/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/inferno-smoke-u3NCVJG0JH/hq.mp4",
+      "difficulty": "MEDIUM",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left+jump.",
+        "Kretanje: running.",
+        "Preciznost: precise.",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/inferno/arch-from-t-spawn"
+    },
+    {
+      "id": "cs-inferno-ct-boost-from-banana",
+      "mapId": "inferno",
+      "side": "T",
+      "type": "SMOKE",
+      "title": "Banana → CT Boost",
+      "origin": "BANANA",
+      "target": "CT BOOST",
+      "thumbnail": "https://assets.csnades.gg/nades/inferno-smoke-vfHHD9pJt8/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/inferno-smoke-vfHHD9pJt8/hq.mp4",
+      "difficulty": "MEDIUM",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left.",
+        "Kretanje: stationary.",
+        "Preciznost: precise.",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/inferno/ct-boost-from-banana"
+    },
+    {
       "id": "cs-inferno-1st-oranges-from-car",
       "mapId": "inferno",
       "side": "T",
@@ -203,6 +626,26 @@
         "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
       ],
       "sourceUrl": "https://csnades.gg/inferno/banana-from-front-sandbags"
+    },
+    {
+      "id": "cs-inferno-banana-from-b-entrance",
+      "mapId": "inferno",
+      "side": "CT",
+      "type": "HE",
+      "title": "B Entrance → Banana",
+      "origin": "B ENTRANCE",
+      "target": "BANANA",
+      "thumbnail": "https://assets.csnades.gg/nades/inferno-he-WnJ9q3LRkZ/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/inferno-he-WnJ9q3LRkZ/hq.mp4",
+      "difficulty": "MEDIUM",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: both.",
+        "Kretanje: running.",
+        "Preciznost: precise.",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/inferno/banana-from-b-entrance"
     },
     {
       "id": "cs-dust2-xbox-from-lower-tunnels",
@@ -266,6 +709,210 @@
       "sourceUrl": "https://csnades.gg/dust2/xbox-from-t-spawn"
     },
     {
+      "id": "cs-dust2-long-corner-from-outside-a-long",
+      "mapId": "dust2",
+      "side": "T",
+      "type": "SMOKE",
+      "title": "Outside A Long → Long Corner",
+      "origin": "OUTSIDE A LONG",
+      "target": "LONG CORNER",
+      "thumbnail": "https://assets.csnades.gg/nades/dust2-smoke-pOy1yKGuae/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/dust2-smoke-pOy1yKGuae/hq.mp4",
+      "difficulty": "MEDIUM",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left.",
+        "Kretanje: stationary.",
+        "Preciznost: precise.",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/dust2/long-corner-from-outside-a-long"
+    },
+    {
+      "id": "cs-dust2-xbox-from-outside-long",
+      "mapId": "dust2",
+      "side": "T",
+      "type": "SMOKE",
+      "title": "Outside Long → XBox",
+      "origin": "OUTSIDE LONG",
+      "target": "XBOX",
+      "thumbnail": "https://assets.csnades.gg/nades/dust2-smoke-rNJIRUrRfB/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/dust2-smoke-rNJIRUrRfB/hq.mp4",
+      "difficulty": "MEDIUM",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left+jump.",
+        "Kretanje: stationary.",
+        "Preciznost: precise.",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/dust2/xbox-from-outside-long"
+    },
+    {
+      "id": "cs-dust2-ct-spawn-from-a-ramp",
+      "mapId": "dust2",
+      "side": "T",
+      "type": "SMOKE",
+      "title": "A Ramp → CT Spawn",
+      "origin": "A RAMP",
+      "target": "CT SPAWN",
+      "thumbnail": "https://assets.csnades.gg/nades/dust2-smoke-F9Y4GUxN3x/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/dust2-smoke-F9Y4GUxN3x/hq.mp4",
+      "difficulty": "MEDIUM",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left.",
+        "Kretanje: crouched stationary.",
+        "Preciznost: precise.",
+        "Odgovara bounce off 1 referentnih točaka (vidi radar na CSNADES).",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/dust2/ct-spawn-from-a-ramp"
+    },
+    {
+      "id": "cs-dust2-xbox-from-top-mid",
+      "mapId": "dust2",
+      "side": "T",
+      "type": "SMOKE",
+      "title": "Top Mid → XBox",
+      "origin": "TOP MID",
+      "target": "XBOX",
+      "thumbnail": "https://assets.csnades.gg/nades/dust2-smoke-mkO4HqnvNi/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/dust2-smoke-mkO4HqnvNi/hq.mp4",
+      "difficulty": "MEDIUM",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left.",
+        "Kretanje: running.",
+        "Preciznost: precise.",
+        "Odgovara bounce off 1 referentnih točaka (vidi radar na CSNADES).",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/dust2/xbox-from-top-mid"
+    },
+    {
+      "id": "cs-dust2-b-doors-from-upper-tunnels-a",
+      "mapId": "dust2",
+      "side": "T",
+      "type": "SMOKE",
+      "title": "Upper Tunnels → B Doors",
+      "origin": "UPPER TUNNELS",
+      "target": "B DOORS",
+      "thumbnail": "https://assets.csnades.gg/nades/dust2-smoke-7KwvY4vQcC/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/dust2-smoke-7KwvY4vQcC/hq.mp4",
+      "difficulty": "MEDIUM",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left.",
+        "Kretanje: stationary.",
+        "Preciznost: precise.",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/dust2/b-doors-from-upper-tunnels-a"
+    },
+    {
+      "id": "cs-dust2-b-doors-from-upper-tunnels-b",
+      "mapId": "dust2",
+      "side": "T",
+      "type": "SMOKE",
+      "title": "Upper Tunnels → B Doors",
+      "origin": "UPPER TUNNELS",
+      "target": "B DOORS",
+      "thumbnail": "https://assets.csnades.gg/nades/dust2-smoke-kNzHMUP7Rq/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/dust2-smoke-kNzHMUP7Rq/hq.mp4",
+      "difficulty": "MEDIUM",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left.",
+        "Kretanje: stationary.",
+        "Preciznost: precise.",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/dust2/b-doors-from-upper-tunnels-b"
+    },
+    {
+      "id": "cs-dust2-b-doors-from-catwalk",
+      "mapId": "dust2",
+      "side": "T",
+      "type": "SMOKE",
+      "title": "Catwalk → B Doors",
+      "origin": "CATWALK",
+      "target": "B DOORS",
+      "thumbnail": "https://assets.csnades.gg/nades/dust2-smoke-aUuxroAy3B/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/dust2-smoke-aUuxroAy3B/hq.mp4",
+      "difficulty": "MEDIUM",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left+jump.",
+        "Kretanje: running.",
+        "Preciznost: precise.",
+        "Odgovara bounce off 1 referentnih točaka (vidi radar na CSNADES).",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/dust2/b-doors-from-catwalk"
+    },
+    {
+      "id": "cs-dust2-long-corner-from-t-spawn",
+      "mapId": "dust2",
+      "side": "T",
+      "type": "SMOKE",
+      "title": "T Spawn → Long Corner",
+      "origin": "T SPAWN",
+      "target": "LONG CORNER",
+      "thumbnail": "https://assets.csnades.gg/nades/dust2-smoke-bWhSI26gxI/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/dust2-smoke-bWhSI26gxI/hq.mp4",
+      "difficulty": "MEDIUM",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left+jump.",
+        "Kretanje: stationary.",
+        "Preciznost: precise.",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/dust2/long-corner-from-t-spawn"
+    },
+    {
+      "id": "cs-dust2-short-from-stairs",
+      "mapId": "dust2",
+      "side": "T",
+      "type": "SMOKE",
+      "title": "Stairs → Short",
+      "origin": "STAIRS",
+      "target": "SHORT",
+      "thumbnail": "https://assets.csnades.gg/nades/dust2-smoke-VdDWeYZRCH/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/dust2-smoke-VdDWeYZRCH/hq.mp4",
+      "difficulty": "MEDIUM",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left.",
+        "Kretanje: stationary.",
+        "Preciznost: precise.",
+        "Odgovara bounce off 1 referentnih točaka (vidi radar na CSNADES).",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/dust2/short-from-stairs"
+    },
+    {
+      "id": "cs-dust2-b-plat-from-upper-tunnels",
+      "mapId": "dust2",
+      "side": "T",
+      "type": "SMOKE",
+      "title": "Upper Tunnels → B Plat",
+      "origin": "UPPER TUNNELS",
+      "target": "B PLAT",
+      "thumbnail": "https://assets.csnades.gg/nades/dust2-smoke-gsFTgCKTfN/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/dust2-smoke-gsFTgCKTfN/hq.mp4",
+      "difficulty": "MEDIUM",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left.",
+        "Kretanje: stationary.",
+        "Preciznost: precise.",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/dust2/b-plat-from-upper-tunnels"
+    },
+    {
       "id": "cs-dust2-short-from-goose",
       "mapId": "dust2",
       "side": "CT",
@@ -304,6 +951,26 @@
         "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
       ],
       "sourceUrl": "https://csnades.gg/dust2/b-site-from-upper-tunnels"
+    },
+    {
+      "id": "cs-dust2-short-from-lower-tunnels",
+      "mapId": "dust2",
+      "side": "T",
+      "type": "HE",
+      "title": "Lower Tunnels → Short",
+      "origin": "LOWER TUNNELS",
+      "target": "SHORT",
+      "thumbnail": "https://assets.csnades.gg/nades/dust2-he-aRR3lBtKnE/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/dust2-he-aRR3lBtKnE/hq.mp4",
+      "difficulty": "MEDIUM",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left+jump.",
+        "Kretanje: stationary.",
+        "Preciznost: precise.",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/dust2/short-from-lower-tunnels"
     },
     {
       "id": "cs-ancient-back-alley-from-ruins",
@@ -367,6 +1034,206 @@
       "sourceUrl": "https://csnades.gg/ancient/a-stairs-from-ct-spawn"
     },
     {
+      "id": "cs-ancient-plat-from-outside-a",
+      "mapId": "ancient",
+      "side": "T",
+      "type": "SMOKE",
+      "title": "Outside A → Plat",
+      "origin": "OUTSIDE A",
+      "target": "PLAT",
+      "thumbnail": "https://assets.csnades.gg/nades/ancient-smoke-nQ0TRW2zEy/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/ancient-smoke-nQ0TRW2zEy/hq.mp4",
+      "difficulty": "MEDIUM",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left+jump.",
+        "Kretanje: crouched walking.",
+        "Preciznost: precise.",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/ancient/plat-from-outside-a"
+    },
+    {
+      "id": "cs-ancient-top-mid-from-elbow",
+      "mapId": "ancient",
+      "side": "T",
+      "type": "SMOKE",
+      "title": "Elbow → Top Mid",
+      "origin": "ELBOW",
+      "target": "TOP MID",
+      "thumbnail": "https://assets.csnades.gg/nades/ancient-smoke-hxqGWlgsf1/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/ancient-smoke-hxqGWlgsf1/hq.mp4",
+      "difficulty": "MEDIUM",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left.",
+        "Kretanje: stationary.",
+        "Preciznost: precise.",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/ancient/top-mid-from-elbow"
+    },
+    {
+      "id": "cs-ancient-elbow-from-ct-spawn",
+      "mapId": "ancient",
+      "side": "CT",
+      "type": "SMOKE",
+      "title": "CT Spawn → Elbow",
+      "origin": "CT SPAWN",
+      "target": "ELBOW",
+      "thumbnail": "https://assets.csnades.gg/nades/ancient-smoke-3jqGZRf1yP/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/ancient-smoke-3jqGZRf1yP/hq.mp4",
+      "difficulty": "MEDIUM",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left+jump.",
+        "Kretanje: stationary.",
+        "Preciznost: precise.",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/ancient/elbow-from-ct-spawn"
+    },
+    {
+      "id": "cs-ancient-elbow-from-top-mid",
+      "mapId": "ancient",
+      "side": "CT",
+      "type": "SMOKE",
+      "title": "Top Mid → Elbow",
+      "origin": "TOP MID",
+      "target": "ELBOW",
+      "thumbnail": "https://assets.csnades.gg/nades/ancient-smoke-8lGFrrndCd/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/ancient-smoke-8lGFrrndCd/hq.mp4",
+      "difficulty": "MEDIUM",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left.",
+        "Kretanje: stationary.",
+        "Preciznost: precise.",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/ancient/elbow-from-top-mid"
+    },
+    {
+      "id": "cs-ancient-elbow-from-a-site",
+      "mapId": "ancient",
+      "side": "CT",
+      "type": "SMOKE",
+      "title": "A Site → Elbow",
+      "origin": "A SITE",
+      "target": "ELBOW",
+      "thumbnail": "https://assets.csnades.gg/nades/ancient-smoke-TNzch9HB1o/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/ancient-smoke-TNzch9HB1o/hq.mp4",
+      "difficulty": "MEDIUM",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left+jump.",
+        "Kretanje: stationary.",
+        "Preciznost: precise.",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/ancient/elbow-from-a-site"
+    },
+    {
+      "id": "cs-ancient-a-long-from-a-site",
+      "mapId": "ancient",
+      "side": "CT",
+      "type": "SMOKE",
+      "title": "A Site → A Long",
+      "origin": "A SITE",
+      "target": "A LONG",
+      "thumbnail": "https://assets.csnades.gg/nades/ancient-smoke-wituBpGQ5V/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/ancient-smoke-wituBpGQ5V/hq.mp4",
+      "difficulty": "EASY",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left.",
+        "Kretanje: stationary.",
+        "Preciznost: loose.",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/ancient/a-long-from-a-site"
+    },
+    {
+      "id": "cs-ancient-back-alley-from-catwalk",
+      "mapId": "ancient",
+      "side": "T",
+      "type": "SMOKE",
+      "title": "Catwalk → Back Alley",
+      "origin": "CATWALK",
+      "target": "BACK ALLEY",
+      "thumbnail": "https://assets.csnades.gg/nades/ancient-smoke-ddbpjQNuSO/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/ancient-smoke-ddbpjQNuSO/hq.mp4",
+      "difficulty": "MEDIUM",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left.",
+        "Kretanje: stationary.",
+        "Preciznost: precise.",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/ancient/back-alley-from-catwalk"
+    },
+    {
+      "id": "cs-ancient-ct-alley-from-ruins",
+      "mapId": "ancient",
+      "side": "T",
+      "type": "SMOKE",
+      "title": "Ruins → CT Alley",
+      "origin": "RUINS",
+      "target": "CT ALLEY",
+      "thumbnail": "https://assets.csnades.gg/nades/ancient-smoke-wf1H9QRXfP/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/ancient-smoke-wf1H9QRXfP/hq.mp4",
+      "difficulty": "MEDIUM",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left+jump.",
+        "Kretanje: running.",
+        "Preciznost: precise.",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/ancient/ct-alley-from-ruins"
+    },
+    {
+      "id": "cs-ancient-t-upper-from-b-site",
+      "mapId": "ancient",
+      "side": "CT",
+      "type": "SMOKE",
+      "title": "B Site → T Upper",
+      "origin": "B SITE",
+      "target": "T UPPER",
+      "thumbnail": "https://assets.csnades.gg/nades/ancient-smoke-6XV43iP8Ov/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/ancient-smoke-6XV43iP8Ov/hq.mp4",
+      "difficulty": "MEDIUM",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left.",
+        "Kretanje: walking.",
+        "Preciznost: precise.",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/ancient/t-upper-from-b-site"
+    },
+    {
+      "id": "cs-ancient-cubby-from-t-spawn",
+      "mapId": "ancient",
+      "side": "T",
+      "type": "SMOKE",
+      "title": "T Spawn → Cubby",
+      "origin": "T SPAWN",
+      "target": "CUBBY",
+      "thumbnail": "https://assets.csnades.gg/nades/ancient-smoke-dhIFotCS7m/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/ancient-smoke-dhIFotCS7m/hq.mp4",
+      "difficulty": "MEDIUM",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left+jump.",
+        "Kretanje: stationary.",
+        "Preciznost: precise.",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/ancient/cubby-from-t-spawn"
+    },
+    {
       "id": "cs-ancient-pillar-from-b-doors",
       "mapId": "ancient",
       "side": "T",
@@ -406,6 +1273,26 @@
         "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
       ],
       "sourceUrl": "https://csnades.gg/ancient/donut-from-donut"
+    },
+    {
+      "id": "cs-ancient-lower-catwalk-from-b-site",
+      "mapId": "ancient",
+      "side": "CT",
+      "type": "HE",
+      "title": "B Site → Lower Catwalk",
+      "origin": "B SITE",
+      "target": "LOWER CATWALK",
+      "thumbnail": "https://assets.csnades.gg/nades/ancient-he-Cbjla4jrB4/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/ancient-he-Cbjla4jrB4/hq.mp4",
+      "difficulty": "MEDIUM",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: right+jump.",
+        "Kretanje: running.",
+        "Preciznost: precise.",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/ancient/lower-catwalk-from-b-site"
     },
     {
       "id": "cs-anubis-top-mid-from-t-spawn",
@@ -468,6 +1355,206 @@
       "sourceUrl": "https://csnades.gg/anubis/canals-from-t-spawn"
     },
     {
+      "id": "cs-anubis-heaven-from-door",
+      "mapId": "anubis",
+      "side": "T",
+      "type": "SMOKE",
+      "title": "Door → Heaven",
+      "origin": "DOOR",
+      "target": "HEAVEN",
+      "thumbnail": "https://assets.csnades.gg/nades/anubis-smoke-ZQ0D2bZhk7/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/anubis-smoke-ZQ0D2bZhk7/hq.mp4",
+      "difficulty": "MEDIUM",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left.",
+        "Kretanje: walking.",
+        "Preciznost: precise.",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/anubis/heaven-from-door"
+    },
+    {
+      "id": "cs-anubis-heaven-from-water-b",
+      "mapId": "anubis",
+      "side": "T",
+      "type": "SMOKE",
+      "title": "Water → Heaven",
+      "origin": "WATER",
+      "target": "HEAVEN",
+      "thumbnail": "https://assets.csnades.gg/nades/anubis-smoke-JbhR4dxPHd/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/anubis-smoke-JbhR4dxPHd/hq.mp4",
+      "difficulty": "EASY",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left+jump.",
+        "Kretanje: stationary.",
+        "Preciznost: loose.",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/anubis/heaven-from-water-b"
+    },
+    {
+      "id": "cs-anubis-heaven-from-t-upper",
+      "mapId": "anubis",
+      "side": "T",
+      "type": "SMOKE",
+      "title": "T Upper → Heaven",
+      "origin": "T UPPER",
+      "target": "HEAVEN",
+      "thumbnail": "https://assets.csnades.gg/nades/anubis-smoke-aQBt4qCxLI/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/anubis-smoke-aQBt4qCxLI/hq.mp4",
+      "difficulty": "MEDIUM",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left+jump.",
+        "Kretanje: stationary.",
+        "Preciznost: precise.",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/anubis/heaven-from-t-upper"
+    },
+    {
+      "id": "cs-anubis-connector-from-t-upper",
+      "mapId": "anubis",
+      "side": "T",
+      "type": "SMOKE",
+      "title": "T Upper → Connector",
+      "origin": "T UPPER",
+      "target": "CONNECTOR",
+      "thumbnail": "https://assets.csnades.gg/nades/anubis-smoke-Qoj34RwWIE/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/anubis-smoke-Qoj34RwWIE/hq.mp4",
+      "difficulty": "MEDIUM",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left.",
+        "Kretanje: stationary.",
+        "Preciznost: precise.",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/anubis/connector-from-t-upper"
+    },
+    {
+      "id": "cs-anubis-a-main-from-ct-spawn",
+      "mapId": "anubis",
+      "side": "CT",
+      "type": "SMOKE",
+      "title": "CT Spawn → A Main",
+      "origin": "CT SPAWN",
+      "target": "A MAIN",
+      "thumbnail": "https://assets.csnades.gg/nades/anubis-smoke-i0V3IGxV72/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/anubis-smoke-i0V3IGxV72/hq.mp4",
+      "difficulty": "MEDIUM",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left+jump.",
+        "Kretanje: stationary.",
+        "Preciznost: precise.",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/anubis/a-main-from-ct-spawn"
+    },
+    {
+      "id": "cs-anubis-platform-from-water",
+      "mapId": "anubis",
+      "side": "T",
+      "type": "SMOKE",
+      "title": "Water → Platform",
+      "origin": "WATER",
+      "target": "PLATFORM",
+      "thumbnail": "https://assets.csnades.gg/nades/anubis-smoke-9m7ZJDVzDW/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/anubis-smoke-9m7ZJDVzDW/hq.mp4",
+      "difficulty": "MEDIUM",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left+jump.",
+        "Kretanje: stationary.",
+        "Preciznost: precise.",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/anubis/platform-from-water"
+    },
+    {
+      "id": "cs-anubis-mid-b-door-from-street",
+      "mapId": "anubis",
+      "side": "T",
+      "type": "SMOKE",
+      "title": "Street → Mid B Door",
+      "origin": "STREET",
+      "target": "MID B DOOR",
+      "thumbnail": "https://assets.csnades.gg/nades/anubis-smoke-Uc2dqMbjkm/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/anubis-smoke-Uc2dqMbjkm/hq.mp4",
+      "difficulty": "MEDIUM",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left+jump.",
+        "Kretanje: stationary.",
+        "Preciznost: precise.",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/anubis/mid-b-door-from-street"
+    },
+    {
+      "id": "cs-anubis-mid-from-t-spawn",
+      "mapId": "anubis",
+      "side": "T",
+      "type": "SMOKE",
+      "title": "T Spawn → Mid",
+      "origin": "T SPAWN",
+      "target": "MID",
+      "thumbnail": "https://assets.csnades.gg/nades/anubis-smoke-SS2YPrXfMr/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/anubis-smoke-SS2YPrXfMr/hq.mp4",
+      "difficulty": "MEDIUM",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left+jump.",
+        "Kretanje: stationary.",
+        "Preciznost: precise.",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/anubis/mid-from-t-spawn"
+    },
+    {
+      "id": "cs-anubis-mid-from-t-spawn-b",
+      "mapId": "anubis",
+      "side": "T",
+      "type": "SMOKE",
+      "title": "T Spawn → Mid",
+      "origin": "T SPAWN",
+      "target": "MID",
+      "thumbnail": "https://assets.csnades.gg/nades/anubis-smoke-6LlChTThp0/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/anubis-smoke-6LlChTThp0/hq.mp4",
+      "difficulty": "MEDIUM",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left+jump.",
+        "Kretanje: stationary.",
+        "Preciznost: precise.",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/anubis/mid-from-t-spawn-b"
+    },
+    {
+      "id": "cs-anubis-bridge-from-mid",
+      "mapId": "anubis",
+      "side": "CT",
+      "type": "SMOKE",
+      "title": "Mid → Bridge",
+      "origin": "MID",
+      "target": "BRIDGE",
+      "thumbnail": "https://assets.csnades.gg/nades/anubis-smoke-YJNUQ1gNxc/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/anubis-smoke-YJNUQ1gNxc/hq.mp4",
+      "difficulty": "EASY",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left.",
+        "Kretanje: stationary.",
+        "Preciznost: loose.",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/anubis/bridge-from-mid"
+    },
+    {
       "id": "cs-anubis-a-corner-from-water",
       "mapId": "anubis",
       "side": "T",
@@ -506,6 +1593,26 @@
         "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
       ],
       "sourceUrl": "https://csnades.gg/anubis/a-main-from-connector"
+    },
+    {
+      "id": "cs-anubis-fountain-from-a-main",
+      "mapId": "anubis",
+      "side": "T",
+      "type": "HE",
+      "title": "A Main → Fountain",
+      "origin": "A MAIN",
+      "target": "FOUNTAIN",
+      "thumbnail": "https://assets.csnades.gg/nades/anubis-he-fawnaWhYVK/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/anubis-he-fawnaWhYVK/hq.mp4",
+      "difficulty": "MEDIUM",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left.",
+        "Kretanje: running.",
+        "Preciznost: precise.",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/anubis/fountain-from-a-main"
     },
     {
       "id": "cs-nuke-secret-close-from-t-spawn",
@@ -568,6 +1675,207 @@
       "sourceUrl": "https://csnades.gg/nuke/secret-far-from-outside-t-spawn"
     },
     {
+      "id": "cs-nuke-secret-far-from-t-spawn",
+      "mapId": "nuke",
+      "side": "T",
+      "type": "SMOKE",
+      "title": "T Spawn → Secret Far",
+      "origin": "T SPAWN",
+      "target": "SECRET FAR",
+      "thumbnail": "https://assets.csnades.gg/nades/nuke-smoke-EsLX408n4d/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/nuke-smoke-EsLX408n4d/hq.mp4",
+      "difficulty": "MEDIUM",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left+jump.",
+        "Kretanje: stationary.",
+        "Preciznost: precise.",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/nuke/secret-far-from-t-spawn"
+    },
+    {
+      "id": "cs-nuke-garage-from-under-silo",
+      "mapId": "nuke",
+      "side": "T",
+      "type": "SMOKE",
+      "title": "Under Silo → Garage",
+      "origin": "UNDER SILO",
+      "target": "GARAGE",
+      "thumbnail": "https://assets.csnades.gg/nades/nuke-smoke-l3koCgeoHZ/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/nuke-smoke-l3koCgeoHZ/hq.mp4",
+      "difficulty": "MEDIUM",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left.",
+        "Kretanje: stationary.",
+        "Preciznost: precise.",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/nuke/garage-from-under-silo"
+    },
+    {
+      "id": "cs-nuke-vent-from-t-spawn-a",
+      "mapId": "nuke",
+      "side": "T",
+      "type": "SMOKE",
+      "title": "T Spawn → Vent",
+      "origin": "T SPAWN",
+      "target": "VENT",
+      "thumbnail": "https://assets.csnades.gg/nades/nuke-smoke-6T37K29Fos/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/nuke-smoke-6T37K29Fos/hq.mp4",
+      "difficulty": "HARD",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left+jump.",
+        "Kretanje: stationary.",
+        "Preciznost: very precise.",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/nuke/vent-from-t-spawn-a"
+    },
+    {
+      "id": "cs-nuke-vent-from-t-spawn-b",
+      "mapId": "nuke",
+      "side": "T",
+      "type": "SMOKE",
+      "title": "T Spawn → Vent",
+      "origin": "T SPAWN",
+      "target": "VENT",
+      "thumbnail": "https://assets.csnades.gg/nades/nuke-smoke-Q9fOLapNdW/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/nuke-smoke-Q9fOLapNdW/hq.mp4",
+      "difficulty": "MEDIUM",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left+jump.",
+        "Kretanje: crouched walking.",
+        "Preciznost: precise.",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/nuke/vent-from-t-spawn-b"
+    },
+    {
+      "id": "cs-nuke-t-red-from-under-silo",
+      "mapId": "nuke",
+      "side": "T",
+      "type": "SMOKE",
+      "title": "Under Silo → T Red",
+      "origin": "UNDER SILO",
+      "target": "T RED",
+      "thumbnail": "https://assets.csnades.gg/nades/nuke-smoke-SeoQHvk150/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/nuke-smoke-SeoQHvk150/hq.mp4",
+      "difficulty": "EASY",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left.",
+        "Kretanje: running.",
+        "Preciznost: loose.",
+        "Odgovara bounce off 1 referentnih točaka (vidi radar na CSNADES).",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/nuke/t-red-from-under-silo"
+    },
+    {
+      "id": "cs-nuke-ct-red-from-under-silo",
+      "mapId": "nuke",
+      "side": "T",
+      "type": "SMOKE",
+      "title": "Under Silo → CT Red",
+      "origin": "UNDER SILO",
+      "target": "CT RED",
+      "thumbnail": "https://assets.csnades.gg/nades/nuke-smoke-EYwJuFOVfp/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/nuke-smoke-EYwJuFOVfp/hq.mp4",
+      "difficulty": "MEDIUM",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left.",
+        "Kretanje: stationary.",
+        "Preciznost: precise.",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/nuke/ct-red-from-under-silo"
+    },
+    {
+      "id": "cs-nuke-outside-main-from-outside-t-spawn",
+      "mapId": "nuke",
+      "side": "T",
+      "type": "SMOKE",
+      "title": "Outside T Spawn → Outside Main",
+      "origin": "OUTSIDE T SPAWN",
+      "target": "OUTSIDE MAIN",
+      "thumbnail": "https://assets.csnades.gg/nades/nuke-smoke-zz31RtrBm0/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/nuke-smoke-zz31RtrBm0/hq.mp4",
+      "difficulty": "MEDIUM",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left+jump.",
+        "Kretanje: stationary.",
+        "Preciznost: precise.",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/nuke/outside-main-from-outside-t-spawn"
+    },
+    {
+      "id": "cs-nuke-garage-from-outside-t-spawn",
+      "mapId": "nuke",
+      "side": "T",
+      "type": "SMOKE",
+      "title": "Outside T Spawn → Garage",
+      "origin": "OUTSIDE T SPAWN",
+      "target": "GARAGE",
+      "thumbnail": "https://assets.csnades.gg/nades/nuke-smoke-0qZP5UcuWj/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/nuke-smoke-0qZP5UcuWj/hq.mp4",
+      "difficulty": "MEDIUM",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left+jump.",
+        "Kretanje: stationary.",
+        "Preciznost: precise.",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/nuke/garage-from-outside-t-spawn"
+    },
+    {
+      "id": "cs-nuke-heaven-from-silo",
+      "mapId": "nuke",
+      "side": "T",
+      "type": "SMOKE",
+      "title": "Silo → Heaven",
+      "origin": "SILO",
+      "target": "HEAVEN",
+      "thumbnail": "https://assets.csnades.gg/nades/nuke-smoke-ZcYGFCKa39/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/nuke-smoke-ZcYGFCKa39/hq.mp4",
+      "difficulty": "HARD",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left.",
+        "Kretanje: stationary.",
+        "Preciznost: very precise.",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/nuke/heaven-from-silo"
+    },
+    {
+      "id": "cs-nuke-lockers-from-t-spawn-b",
+      "mapId": "nuke",
+      "side": "T",
+      "type": "SMOKE",
+      "title": "T Spawn → Lockers",
+      "origin": "T SPAWN",
+      "target": "LOCKERS",
+      "thumbnail": "https://assets.csnades.gg/nades/nuke-smoke-reQfiYAbzB/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/nuke-smoke-reQfiYAbzB/hq.mp4",
+      "difficulty": "HARD",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left+jump.",
+        "Kretanje: stationary.",
+        "Preciznost: very precise.",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/nuke/lockers-from-t-spawn-b"
+    },
+    {
       "id": "cs-nuke-top-hut-from-t-roof-a",
       "mapId": "nuke",
       "side": "T",
@@ -607,6 +1915,26 @@
         "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
       ],
       "sourceUrl": "https://csnades.gg/nuke/ramp-from-trophy"
+    },
+    {
+      "id": "cs-nuke-silo-from-a-main",
+      "mapId": "nuke",
+      "side": "CT",
+      "type": "HE",
+      "title": "A Main → Silo",
+      "origin": "A MAIN",
+      "target": "SILO",
+      "thumbnail": "https://assets.csnades.gg/nades/nuke-he-xpGvbR2s4g/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/nuke-he-xpGvbR2s4g/hq.mp4",
+      "difficulty": "MEDIUM",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left.",
+        "Kretanje: stationary.",
+        "Preciznost: precise.",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/nuke/silo-from-a-main"
     },
     {
       "id": "cs-vertigo-ebox-from-b-stairs",
@@ -670,6 +1998,208 @@
       "sourceUrl": "https://csnades.gg/vertigo/a-ramp-from-ct-mid"
     },
     {
+      "id": "cs-vertigo-top-a-ramp-from-heaven",
+      "mapId": "vertigo",
+      "side": "CT",
+      "type": "SMOKE",
+      "title": "Heaven → Top A Ramp",
+      "origin": "HEAVEN",
+      "target": "TOP A RAMP",
+      "thumbnail": "https://assets.csnades.gg/nades/vertigo-smoke-T7wlpObMtB/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/vertigo-smoke-T7wlpObMtB/hq.mp4",
+      "difficulty": "MEDIUM",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left+jump.",
+        "Kretanje: stationary.",
+        "Preciznost: precise.",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/vertigo/top-a-ramp-from-heaven"
+    },
+    {
+      "id": "cs-vertigo-tarp-from-a-site",
+      "mapId": "vertigo",
+      "side": "CT",
+      "type": "SMOKE",
+      "title": "A Site → Tarp",
+      "origin": "A SITE",
+      "target": "TARP",
+      "thumbnail": "https://assets.csnades.gg/nades/vertigo-smoke-qMX7mv9E5v/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/vertigo-smoke-qMX7mv9E5v/hq.mp4",
+      "difficulty": "MEDIUM",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left.",
+        "Kretanje: stationary.",
+        "Preciznost: precise.",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/vertigo/tarp-from-a-site"
+    },
+    {
+      "id": "cs-vertigo-a-site-right-from-ramp",
+      "mapId": "vertigo",
+      "side": "T",
+      "type": "SMOKE",
+      "title": "Ramp → A Site Right",
+      "origin": "RAMP",
+      "target": "A SITE RIGHT",
+      "thumbnail": "https://assets.csnades.gg/nades/vertigo-smoke-cOpgHeMF27/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/vertigo-smoke-cOpgHeMF27/hq.mp4",
+      "difficulty": "MEDIUM",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left.",
+        "Kretanje: stationary.",
+        "Preciznost: precise.",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/vertigo/a-site-right-from-ramp"
+    },
+    {
+      "id": "cs-vertigo-a-site-left-from-ramp",
+      "mapId": "vertigo",
+      "side": "T",
+      "type": "SMOKE",
+      "title": "Ramp → A Site Left",
+      "origin": "RAMP",
+      "target": "A SITE LEFT",
+      "thumbnail": "https://assets.csnades.gg/nades/vertigo-smoke-ynNaNJ7Ga9/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/vertigo-smoke-ynNaNJ7Ga9/hq.mp4",
+      "difficulty": "MEDIUM",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left+jump.",
+        "Kretanje: stationary.",
+        "Preciznost: precise.",
+        "Odgovara bounce off 1 referentnih točaka (vidi radar na CSNADES).",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/vertigo/a-site-left-from-ramp"
+    },
+    {
+      "id": "cs-vertigo-crane-from-a-site",
+      "mapId": "vertigo",
+      "side": "CT",
+      "type": "SMOKE",
+      "title": "A Site → Crane",
+      "origin": "A SITE",
+      "target": "CRANE",
+      "thumbnail": "https://assets.csnades.gg/nades/vertigo-smoke-GtVlFr6AV1/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/vertigo-smoke-GtVlFr6AV1/hq.mp4",
+      "difficulty": "MEDIUM",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left.",
+        "Kretanje: stationary.",
+        "Preciznost: precise.",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/vertigo/crane-from-a-site"
+    },
+    {
+      "id": "cs-vertigo-a-entry-from-tarp",
+      "mapId": "vertigo",
+      "side": "T",
+      "type": "SMOKE",
+      "title": "Tarp → A Entry",
+      "origin": "TARP",
+      "target": "A ENTRY",
+      "thumbnail": "https://assets.csnades.gg/nades/vertigo-smoke-EkYjo3n3Dj/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/vertigo-smoke-EkYjo3n3Dj/hq.mp4",
+      "difficulty": "MEDIUM",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left+jump.",
+        "Kretanje: stationary.",
+        "Preciznost: precise.",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/vertigo/a-entry-from-tarp"
+    },
+    {
+      "id": "cs-vertigo-top-mid-from-mid",
+      "mapId": "vertigo",
+      "side": "T",
+      "type": "SMOKE",
+      "title": "Mid → Top Mid",
+      "origin": "MID",
+      "target": "TOP MID",
+      "thumbnail": "https://assets.csnades.gg/nades/vertigo-smoke-MdynVcVs2e/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/vertigo-smoke-MdynVcVs2e/hq.mp4",
+      "difficulty": "MEDIUM",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left+jump.",
+        "Kretanje: running.",
+        "Preciznost: precise.",
+        "Odgovara bounce off 1 referentnih točaka (vidi radar na CSNADES).",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/vertigo/top-mid-from-mid"
+    },
+    {
+      "id": "cs-vertigo-headshot-from-a-ramp",
+      "mapId": "vertigo",
+      "side": "T",
+      "type": "SMOKE",
+      "title": "A Ramp → Headshot",
+      "origin": "A RAMP",
+      "target": "HEADSHOT",
+      "thumbnail": "https://assets.csnades.gg/nades/vertigo-smoke-fgahXx0KyV/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/vertigo-smoke-fgahXx0KyV/hq.mp4",
+      "difficulty": "MEDIUM",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left.",
+        "Kretanje: stationary.",
+        "Preciznost: precise.",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/vertigo/headshot-from-a-ramp"
+    },
+    {
+      "id": "cs-vertigo-b-connector-from-mid",
+      "mapId": "vertigo",
+      "side": "T",
+      "type": "SMOKE",
+      "title": "Mid → B Connector",
+      "origin": "MID",
+      "target": "B CONNECTOR",
+      "thumbnail": "https://assets.csnades.gg/nades/vertigo-smoke-IeKwajySMF/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/vertigo-smoke-IeKwajySMF/hq.mp4",
+      "difficulty": "MEDIUM",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left.",
+        "Kretanje: stationary.",
+        "Preciznost: precise.",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/vertigo/b-connector-from-mid"
+    },
+    {
+      "id": "cs-vertigo-ct-from-mid",
+      "mapId": "vertigo",
+      "side": "T",
+      "type": "SMOKE",
+      "title": "Mid → CT",
+      "origin": "MID",
+      "target": "CT",
+      "thumbnail": "https://assets.csnades.gg/nades/vertigo-smoke-i7KNkUQ8kz/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/vertigo-smoke-i7KNkUQ8kz/hq.mp4",
+      "difficulty": "MEDIUM",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left.",
+        "Kretanje: stationary.",
+        "Preciznost: precise.",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/vertigo/ct-from-mid"
+    },
+    {
       "id": "cs-vertigo-triple-from-b-stairs",
       "mapId": "vertigo",
       "side": "T",
@@ -708,6 +2238,27 @@
         "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
       ],
       "sourceUrl": "https://csnades.gg/vertigo/mid-from-ct-mid"
+    },
+    {
+      "id": "cs-vertigo-default-b-from-generator",
+      "mapId": "vertigo",
+      "side": "CT",
+      "type": "HE",
+      "title": "Generator → Default B",
+      "origin": "GENERATOR",
+      "target": "DEFAULT B",
+      "thumbnail": "https://assets.csnades.gg/nades/vertigo-he-KBn6S5cuhX/thumbnail.webp",
+      "videoUrl": "https://assets.csnades.gg/nades/vertigo-he-KBn6S5cuhX/hq.mp4",
+      "difficulty": "MEDIUM",
+      "tickRate": "BOTH",
+      "steps": [
+        "Tehnika: left.",
+        "Kretanje: running.",
+        "Preciznost: precise.",
+        "Odgovara bounce off 1 referentnih točaka (vidi radar na CSNADES).",
+        "Otvori stranicu nade za točan crosshair overlay i HQ video snimak."
+      ],
+      "sourceUrl": "https://csnades.gg/vertigo/default-b-from-generator"
     }
   ]
 }

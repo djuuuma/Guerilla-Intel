@@ -246,10 +246,13 @@ export default function App() {
                 <div className="w-full aspect-video bg-black relative border-b-2 border-primary overflow-hidden group">
                   {/\.(mp4|webm)(\?|$)/i.test(selectedLineup.videoUrl) ? (
                     <video
+                      key={selectedLineup.id}
                       src={selectedLineup.videoUrl}
                       className="w-full h-full object-contain"
-                      controls
+                      autoPlay
+                      muted
                       playsInline
+                      controls
                       poster={selectedLineup.thumbnail}
                       referrerPolicy="no-referrer"
                     />

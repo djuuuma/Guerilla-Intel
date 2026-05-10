@@ -18,6 +18,13 @@ const OUT_JSON = path.join(OUT_DIR, 'csnades-lineups.json');
 
 const MAP_SLUGS = ['mirage', 'inferno', 'dust2', 'ancient', 'anubis', 'nuke', 'vertigo'];
 
+/** Lineups written per map (smoke-heavy; see quotas below). */
+const EXPORT_PER_MAP = 16;
+const SMOKE_QUOTA = 13;
+const MOLO_QUOTA = 1;
+const FLASH_QUOTA = 1;
+const HE_QUOTA = 1;
+
 function findNadesBracketIndex(html) {
   const needle = '\\"nades\\":';
   let pos = -1;
@@ -150,7 +157,7 @@ function sortByScore(list) {
 }
 
 /**
- * Prefer a competitive mix: smoke-heavy, but pulls at least one molotov & flash when present.
+ * Smoke-heavy export: many smokes plus one molotov / flash / HE when available.
  * @returns {unknown[]}
  */
 function pickFeatured(arr, /** @type {number} */ n) {
@@ -180,10 +187,10 @@ function pickFeatured(arr, /** @type {number} */ n) {
     }
   }
 
-  pushUpTo('smoke', 3);
-  pushUpTo('molotov', 1);
-  pushUpTo('flashbang', 1);
-  pushUpTo('he', 1);
+  pushUpTo('smoke', SMOKE_QUOTA);
+  pushUpTo('molotov', MOLO_QUOTA);
+  pushUpTo('flashbang', FLASH_QUOTA);
+  pushUpTo('he', HE_QUOTA);
 
   if (out.length < n) pushUpTo('combination', n - out.length);
   if (out.length < n) pushUpTo('smoke', n - out.length);
@@ -224,7 +231,7 @@ async function main() {
   for (const slug of MAP_SLUGS) {
     process.stderr.write(`Fetching ${slug} (smokes+molos+flashes+HE)…\n`);
     const nades = await fetchAllNadesForMap(slug);
-    const top = pickFeatured(nades, 5);
+    const top = pickFeatured(nades, EXPORT_PER_MAP);
     for (const raw of top) {
       try {
         all.push(toLineup(raw, slug));
