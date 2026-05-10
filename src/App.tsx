@@ -17,8 +17,7 @@ import {
   Wifi,
   Clock,
   Layers,
-  Map as MapIcon,
-  ExternalLink
+  Map as MapIcon
 } from 'lucide-react';
 import { MAPS, LINEUPS } from './data';
 import { MapData, Lineup, Side, SiteZone, UtilityType } from './types';
@@ -167,10 +166,10 @@ export default function App() {
                   >
                     <img 
                       src={map.image} 
-                      className="w-full h-full object-cover grayscale opacity-40 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500" 
+                      className="w-full h-full object-cover" 
                       referrerPolicy="no-referrer" 
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-background/65 md:from-background/90 via-transparent to-transparent pointer-events-none" />
                     <div className="absolute bottom-3 left-3 right-3 flex justify-between items-end">
                        <div className="flex flex-col items-start translate-y-1 group-hover:translate-y-0 transition-transform">
                           <span className="text-[8px] text-primary uppercase font-bold tracking-tighter bg-background px-1 border border-primary/30 mb-1">MAP_{map.id.substring(0,3)}</span>
@@ -345,18 +344,6 @@ export default function App() {
                       <span className="text-[11px] font-black text-primary tracking-widest">{selectedLineup.tickRate} TICK</span>
                     </div>
                   </div>
-
-                  {selectedLineup.sourceUrl && (
-                    <a
-                      href={selectedLineup.sourceUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-2 p-3 border border-primary/40 bg-primary/5 text-[10px] font-bold uppercase tracking-wide text-primary hover:bg-primary/10 transition-colors"
-                    >
-                      <ExternalLink size={14} className="shrink-0" />
-                      <span>Puna demonstracija na CSNADES.gg — otvori u novom tabu</span>
-                    </a>
-                  )}
 
                   <div className="space-y-3">
                     <h3 className="text-[9px] font-black text-muted tracking-[0.3em] uppercase border-b border-muted pb-1 flex justify-between items-center">
