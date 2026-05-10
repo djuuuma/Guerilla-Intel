@@ -2,6 +2,9 @@ export type MapId = 'mirage' | 'inferno' | 'dust2' | 'ancient' | 'anubis' | 'nuk
 
 export type Side = 'CT' | 'T';
 
+/** Bombsite / choke grouping from CSNADES radar + callouts (see sync script). */
+export type SiteZone = 'A' | 'B' | 'MID';
+
 export type UtilityType = 'SMOKE' | 'FLASH' | 'MOLOTOV' | 'HE';
 
 export type Difficulty = 'EASY' | 'MEDIUM' | 'HARD';
@@ -18,6 +21,8 @@ export interface Lineup {
   mapId: MapId;
   side: Side;
   type: UtilityType;
+  /** Where the lineup lands (A / B / mid choke) — mainly for smokes filter. */
+  siteZone: SiteZone;
   title: string;
   origin: string;
   target: string;

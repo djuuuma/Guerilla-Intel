@@ -14,7 +14,8 @@ const ROOT = path.join(__dirname, '..');
 const OUT_DIR = path.join(ROOT, 'src', 'generated');
 const OUT_JSON = path.join(OUT_DIR, 'csnades-lineups.json');
 
-/** @typedef {{ id: string; mapId: string; side: 'T'|'CT'; type: string; title: string; origin: string; target: string; thumbnail: string; videoUrl: string; difficulty: 'EASY'|'MEDIUM'|'HARD'; tickRate: '64'|'128'|'BOTH'; steps: string[]; sourceUrl?: string; }} ExportedLineup */
+/** @typedef {'A'|'B'|'MID'} SiteZone */
+/** @typedef {{ id: string; mapId: string; side: 'T'|'CT'; type: string; siteZone: SiteZone; title: string; origin: string; target: string; thumbnail: string; videoUrl: string; difficulty: 'EASY'|'MEDIUM'|'HARD'; tickRate: '64'|'128'|'BOTH'; steps: string[]; sourceUrl?: string; }} ExportedLineup */
 
 const MAP_SLUGS = ['mirage', 'inferno', 'dust2', 'ancient', 'anubis', 'nuke', 'vertigo'];
 
@@ -33,6 +34,118 @@ function findNadesBracketIndex(html) {
     if (html[b + 1] === '{') return b;
   }
   throw new Error('Could not find full nades array marker ([{…) in HTML');
+}
+
+function balancedBraceSliceEscaped(html, startBraceIdx) {
+  let depth = 0;
+  let i = startBraceIdx;
+  let inStr = false;
+  for (; i < html.length; i++) {
+    const c = html[i];
+    if (inStr) {
+      if (c === '\\' && html[i + 1] === '"') {
+        i++;
+        continue;
+      }
+      if (c === '"') inStr = false;
+      continue;
+    }
+    if (c === '"') {
+      inStr = true;
+      continue;
+    }
+    if (c === '{') depth++;
+    else if (c === '}') {
+      depth--;
+      if (depth === 0) return html.slice(startBraceIdx, i + 1);
+    }
+  }
+  throw new Error('Unbalanced braces while slicing JSON object');
+}
+
+/** @returns {{ aSite: { x: number; y: number }; bSite: { x: number; y: number } } | null} */
+function extractRadarSites(html) {
+  try {
+    const needle = '\\"radarPositions\\":';
+    const idx = html.indexOf(needle);
+    if (idx === -1) return null;
+    const open = html.indexOf('{', idx);
+    const raw = balancedBraceSliceEscaped(html, open);
+    const norm = raw.replace(/\\"/g, '"');
+    const o = JSON.parse(norm);
+    if (o?.aSite?.x == null || o?.bSite?.x == null) return null;
+    return {
+      aSite: { x: o.aSite.x, y: o.aSite.y },
+      bSite: { x: o.bSite.x, y: o.bSite.y },
+    };
+  } catch {
+    return null;
+  }
+}
+
+function dist2(x1, y1, x2, y2) {
+  const dx = x1 - x2;
+  const dy = y1 - y2;
+  return dx * dx + dy * dy;
+}
+
+/** Callout-based fallback when radar coords are missing or ambiguous. */
+/** @returns {SiteZone} */
+function classifySiteFromKeywords(titleFrom, titleTo) {
+  const s = `${titleFrom} ${titleTo}`.toLowerCase();
+
+  // Mirage / common A executes: "connector" alone must not beat these (see Jungle And Connector, Ticket Booth).
+  if (/\bjungle\s*(?:and|,|&)?\s*connector\b/i.test(s)) return 'A';
+  if (/\bticket\s*booth\b/i.test(s)) return 'A';
+  if (/\btop\s*of\s*ticket\b/i.test(s)) return 'A';
+
+  const midRe =
+    /\b(?:mid window|mid doors|top mid|bottom mid|bottom connector|deep stairs|spawn fence|mid|xbox|underpass|catwalk|outside t|quad|boiler|arches|canal|yard|water|hut|lower tunnel|sandwich|elevator|link|lobby|map control|connector)\b/i;
+  const aRe =
+    /\b(?:a site|ticket booth|tetris|kitchen|green|default a|squeaky|altar|temple|jungle|palace|ramp|triple|stairs|moto|balcony|graveyard|a long|a main|fork|cave\s+a|main(?!\s+tunnel))\b/i;
+  const bRe =
+    /\b(?:b site|banana|apts|b apts|back alley|bench|plat|market(?!\s+window)|market door|b window|tunnels|van|lower b|default b|coffins|new box|oranges|sand|cave\s+b|ruins)\b/i;
+
+  const midHit = midRe.test(s);
+  const aHit = aRe.test(s);
+  const bHit = bRe.test(s);
+
+  if (midHit && !aHit && !bHit) return 'MID';
+  if (aHit && !bHit && !midHit) return 'A';
+  if (bHit && !aHit && !midHit) return 'B';
+  if (aHit && !bHit && midHit) return 'A';
+  if (bHit && !aHit && midHit) return 'B';
+  if (midHit) return 'MID';
+  if (aHit && !bHit) return 'A';
+  if (bHit && !aHit) return 'B';
+
+  return 'MID';
+}
+
+/**
+ * Uses throwTo vs CSNADES radar site anchors, with keyword tie-break.
+ * @returns {SiteZone}
+ */
+function classifySiteZone(n, radar) {
+  const tf = String(n.titleFrom || '');
+  const tt = String(n.titleTo || '');
+  const kw = classifySiteFromKeywords(tf, tt);
+
+  if (!radar?.aSite || !radar?.bSite) return kw;
+  const t = n.throwTo;
+  if (t == null || typeof t.x !== 'number' || typeof t.y !== 'number') return kw;
+
+  const da = dist2(t.x, t.y, radar.aSite.x, radar.aSite.y);
+  const db = dist2(t.x, t.y, radar.bSite.x, radar.bSite.y);
+  const maxD = Math.max(da, db, 1e-9);
+  const ratio = Math.min(da, db) / maxD;
+
+  if (ratio > 0.5) return kw;
+
+  const geo = da < db ? 'A' : 'B';
+  if (kw === 'A' || kw === 'B') return kw;
+  // Clear geometry: do not force MID when radar already favours a site (fixes A smokes mis-tagged MID).
+  return geo;
 }
 
 function balancedArraySliceEscaped(html, startBracketIdx) {
@@ -115,11 +228,12 @@ const UTILITY_PATHS = ['smokes', 'molotovs', 'flashbangs', 'hegrenades'];
 
 /**
  * Map pages split utility classes by path (e.g. /mirage/molotovs). Merge and de-dupe by nade id.
- * @returns {Promise<unknown[]>}
+ * @returns {Promise<{ nades: unknown[]; radar: ReturnType<typeof extractRadarSites> }>}
  */
 async function fetchAllNadesForMap(slug) {
   /** @type {Map<string, unknown>} */
   const byId = new Map();
+  let radar = null;
 
   for (const part of UTILITY_PATHS) {
     const url = `https://csnades.gg/${slug}/${part}`;
@@ -129,6 +243,7 @@ async function fetchAllNadesForMap(slug) {
       continue;
     }
     const html = await res.text();
+    if (!radar) radar = extractRadarSites(html);
     let nades;
     try {
       nades = parseNadesFromPageHtml(html, slug);
@@ -141,7 +256,7 @@ async function fetchAllNadesForMap(slug) {
     }
   }
 
-  return [...byId.values()];
+  return { nades: [...byId.values()], radar };
 }
 
 function scoreCard(x) {
@@ -200,18 +315,20 @@ function pickFeatured(arr, /** @type {number} */ n) {
 }
 
 /** @returns {ExportedLineup} */
-function toLineup(n, /** @type {string} */ mapSlug) {
+function toLineup(n, /** @type {string} */ mapSlug, radar) {
   const side = String(n.team || 't').toLowerCase() === 'ct' ? 'CT' : 'T';
   const slug = /** @type {string} */ (n.slug || '');
   const titleFrom = String(n.titleFrom || '');
   const titleTo = String(n.titleTo || '');
   const mp4 = n.assets?.videoHq?.mp4 || n.assets?.videoLq?.mp4 || '';
   const thumb = n.assets?.thumbnail || '';
+  const siteZone = classifySiteZone(n, radar);
   return {
     id: `cs-${mapSlug}-${slug}`,
     mapId: mapSlug,
     side,
     type: mapUtilityType(n.type),
+    siteZone,
     title: `${titleFrom} → ${titleTo}`,
     origin: titleFrom.toUpperCase(),
     target: titleTo.toUpperCase(),
@@ -230,11 +347,11 @@ async function main() {
 
   for (const slug of MAP_SLUGS) {
     process.stderr.write(`Fetching ${slug} (smokes+molos+flashes+HE)…\n`);
-    const nades = await fetchAllNadesForMap(slug);
+    const { nades, radar } = await fetchAllNadesForMap(slug);
     const top = pickFeatured(nades, EXPORT_PER_MAP);
     for (const raw of top) {
       try {
-        all.push(toLineup(raw, slug));
+        all.push(toLineup(raw, slug, radar));
       } catch {
         console.warn(`skip bad row on ${slug}`, raw?.slug);
       }

@@ -21,7 +21,22 @@ import {
   ExternalLink
 } from 'lucide-react';
 import { MAPS, LINEUPS } from './data';
-import { MapData, Lineup, Side, UtilityType } from './types';
+import { MapData, Lineup, Side, SiteZone, UtilityType } from './types';
+
+type SiteFilter = 'ALL' | SiteZone;
+const SITE_SORT: Record<SiteZone, number> = { A: 0, MID: 1, B: 2 };
+
+function siteLabel(z: SiteZone) {
+  if (z === 'A') return 'SITE A';
+  if (z === 'B') return 'SITE B';
+  return 'MID';
+}
+
+function siteBadgeClass(z: SiteZone) {
+  if (z === 'A') return 'border-success/50 text-success bg-success/10';
+  if (z === 'B') return 'border-sky-500/50 text-sky-300 bg-sky-500/10';
+  return 'border-accent/50 text-accent bg-accent/10';
+}
 
 // --- Components ---
 
@@ -41,6 +56,7 @@ export default function App() {
   const [selectedMap, setSelectedMap] = useState<MapData>(MAPS[0]);
   const [selectedSide, setSelectedSide] = useState<Side>('T');
   const [selectedUtility, setSelectedUtility] = useState<UtilityType | null>('SMOKE');
+  const [siteFilter, setSiteFilter] = useState<SiteFilter>('ALL');
   const [selectedLineup, setSelectedLineup] = useState<Lineup | null>(null);
   const [savedLineups, setSavedLineups] = useState<Set<string>>(new Set());
   const [systemTime, setSystemTime] = useState(new Date().toLocaleTimeString());
@@ -52,12 +68,24 @@ export default function App() {
 
   const filteredLineups = useMemo(() => {
     if (!selectedMap || !selectedUtility) return [];
-    return LINEUPS.filter(l => 
-      l.mapId === selectedMap.id && 
-      l.side === selectedSide && 
-      l.type === selectedUtility
+    let rows = LINEUPS.filter(
+      (l) =>
+        l.mapId === selectedMap.id && l.side === selectedSide && l.type === selectedUtility,
     );
-  }, [selectedMap, selectedSide, selectedUtility]);
+    if (selectedUtility === 'SMOKE' && siteFilter !== 'ALL') {
+      rows = rows.filter((l) => l.siteZone === siteFilter);
+    }
+    rows = [...rows].sort((a, b) => {
+      if (selectedUtility === 'SMOKE' && siteFilter === 'ALL') {
+        const z = SITE_SORT[a.siteZone] - SITE_SORT[b.siteZone];
+        if (z !== 0) return z;
+      }
+      const o = a.origin.localeCompare(b.origin);
+      if (o !== 0) return o;
+      return a.target.localeCompare(b.target);
+    });
+    return rows;
+  }, [selectedMap, selectedSide, selectedUtility, siteFilter]);
 
   const toggleSave = (id: string) => {
     const newSaved = new Set(savedLineups);
@@ -68,6 +96,7 @@ export default function App() {
 
   const handleMapSelect = (map: MapData) => {
     setSelectedMap(map);
+    setSiteFilter('ALL');
     setView('LINEUPS');
   };
 
@@ -166,13 +195,13 @@ export default function App() {
             >
               <div className="h-16 shrink-0 border-b-2 border-muted flex">
                  <button 
-                  onClick={() => setSelectedSide('T')}
+                  onClick={() => { setSelectedSide('T'); setSiteFilter('ALL'); }}
                   className={`flex-1 font-black text-sm transition-all uppercase flex items-center justify-center gap-2 ${selectedSide === 'T' ? 'bg-primary text-background' : 'bg-surface/50 text-muted'}`}
                  >
                    <Sword size={14} /> TERORISTI [T]
                  </button>
                  <button 
-                  onClick={() => setSelectedSide('CT')}
+                  onClick={() => { setSelectedSide('CT'); setSiteFilter('ALL'); }}
                   className={`flex-1 font-black text-sm border-l-2 border-muted transition-all uppercase flex items-center justify-center gap-2 ${selectedSide === 'CT' ? 'bg-[#1a2b3c] text-white' : 'bg-surface/50 text-muted'}`}
                  >
                    <Shield size={14} /> ANTI-TEROR [CT]
@@ -180,16 +209,35 @@ export default function App() {
               </div>
 
               <div className="flex overflow-x-auto p-2 border-b-2 border-muted bg-surface/30 gap-2 shrink-0 scrollbar-none">
-                {['SMOKE', 'FLASH', 'MOLOTOV', 'HE'].map((u) => (
+                {(['SMOKE', 'FLASH', 'MOLOTOV', 'HE'] as const).map((u) => (
                   <button 
                     key={u} 
-                    onClick={() => setSelectedUtility(u as UtilityType)}
+                    onClick={() => { setSelectedUtility(u); setSiteFilter('ALL'); }}
                     className={`px-4 py-2 border text-[9px] font-black transition-all whitespace-nowrap shadow-[2px_2px_0px_var(--color-muted)] active:shadow-none active:translate-x-[2px] active:translate-y-[2px] ${selectedUtility === u ? 'border-primary text-primary bg-primary/10' : 'border-muted text-muted bg-background'}`}
                   >
                     {u}
                   </button>
                 ))}
               </div>
+
+              {selectedUtility === 'SMOKE' && (
+                <div className="flex overflow-x-auto p-2 border-b-2 border-muted bg-background/50 gap-2 shrink-0 scrollbar-none">
+                  {(['ALL', 'A', 'MID', 'B'] as const).map((z) => (
+                    <button
+                      key={z}
+                      type="button"
+                      onClick={() => setSiteFilter(z)}
+                      className={`px-3 py-1.5 border text-[8px] font-black uppercase tracking-tight whitespace-nowrap transition-all ${
+                        siteFilter === z
+                          ? 'border-primary text-primary bg-primary/15'
+                          : 'border-muted text-muted bg-surface/40 hover:border-muted/80'
+                      }`}
+                    >
+                      {z === 'ALL' ? 'SVE' : z === 'MID' ? 'MID / CHOKE' : `SITE ${z}`}
+                    </button>
+                  ))}
+                </div>
+              )}
 
               <div className="flex-1 overflow-y-auto p-4 space-y-3 bg-grid grid-lines">
                 <div className="text-[9px] text-muted mb-2 uppercase flex justify-between border-b border-muted pb-1">
@@ -211,7 +259,14 @@ export default function App() {
                     <div className="flex-1 min-w-0">
                       <div className="flex justify-between items-start mb-1.5 gap-2">
                          <h3 className="text-xs font-black text-primary uppercase leading-tight font-system">{lineup.origin} &gt; {lineup.target}</h3>
-                         <span className="text-[8px] bg-background border border-muted px-1 text-muted uppercase font-bold shrink-0">{lineup.tickRate}T</span>
+                         <div className="flex flex-col items-end gap-0.5 shrink-0">
+                           {lineup.type === 'SMOKE' && (
+                             <span className={`text-[7px] px-1 py-px border font-bold uppercase ${siteBadgeClass(lineup.siteZone)}`}>
+                               {siteLabel(lineup.siteZone)}
+                             </span>
+                           )}
+                           <span className="text-[8px] bg-background border border-muted px-1 text-muted uppercase font-bold">{lineup.tickRate}T</span>
+                         </div>
                       </div>
                       <div className="flex items-center justify-between text-[9px] text-muted font-bold tracking-tight gap-2">
                          <span className={lineup.difficulty === 'EASY' ? 'text-success' : 'text-accent'}>TEŽINA: {lineup.difficulty}</span>
@@ -269,7 +324,14 @@ export default function App() {
                 {/* Tactical Content */}
                 <div className="p-4 space-y-6 bg-background">
                   <div className="border-l-4 border-primary pl-4 py-1 bg-surface/30">
-                    <h2 className="text-xl font-black text-primary leading-tight font-system uppercase">{selectedLineup.origin} &rarr; {selectedLineup.target}</h2>
+                    <div className="flex flex-wrap items-center gap-2 gap-y-1">
+                      <h2 className="text-xl font-black text-primary leading-tight font-system uppercase">{selectedLineup.origin} &rarr; {selectedLineup.target}</h2>
+                      {selectedLineup.type === 'SMOKE' && (
+                        <span className={`text-[8px] px-1.5 py-0.5 border font-black uppercase ${siteBadgeClass(selectedLineup.siteZone)}`}>
+                          {siteLabel(selectedLineup.siteZone)}
+                        </span>
+                      )}
+                    </div>
                     <p className="text-[10px] text-muted mt-1 uppercase tracking-widest">{selectedLineup.title}</p>
                   </div>
 
