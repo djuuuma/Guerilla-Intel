@@ -256,7 +256,7 @@ export default function App() {
                     key={lineup.id}
                     type="button"
                     onClick={() => handleLineupSelect(lineup)}
-                    className="w-full min-h-[5.25rem] bg-surface border border-muted p-3 hover:border-primary motion-safe:transition-colors text-left group active:bg-muted/20 relative flex gap-3 cursor-pointer touch-manipulation"
+                    className="w-full min-h-[4.25rem] bg-surface border border-muted p-3 hover:border-primary motion-safe:transition-colors text-left group active:bg-muted/20 relative flex gap-3 cursor-pointer touch-manipulation"
                   >
                     <img
                       src={lineup.thumbnail}
@@ -276,9 +276,8 @@ export default function App() {
                            <span className="text-[11px] bg-background border border-muted px-1.5 py-0.5 text-muted-fg uppercase font-bold">{lineup.tickRate}T</span>
                          </div>
                       </div>
-                      <div className="flex items-center justify-between text-[11px] text-muted-fg font-bold tracking-tight gap-2">
+                      <div className="text-[11px] font-bold tracking-tight">
                          <span className={lineup.difficulty === 'EASY' ? 'text-success' : 'text-accent'}>TEŽINA: {lineup.difficulty}</span>
-                         <span className="text-muted-fg/80 truncate">{lineup.title}</span>
                       </div>
                     </div>
                     <div className="absolute right-2 bottom-2 opacity-0 group-hover:opacity-100 motion-safe:transition-opacity max-sm:opacity-100">
