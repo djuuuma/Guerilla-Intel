@@ -128,7 +128,7 @@ export default function App() {
           )}
           <div className="flex flex-col min-w-0">
             <h1 className="text-xs md:text-sm font-black text-primary leading-none font-system uppercase truncate">
-              {view === 'MAPS' && 'INTEL_CENTAR'}
+              {view === 'MAPS' && 'ANESOV CENTAR ZA BOMBE'}
               {view === 'LINEUPS' && `${selectedMap.name} // TAKTIKE`}
               {view === 'DETAIL' && 'ANALIZA_TAKTIKE'}
             </h1>
