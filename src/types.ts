@@ -26,6 +26,8 @@ export interface Lineup {
   difficulty: Difficulty;
   tickRate: '64' | '128' | 'BOTH';
   steps: string[];
+  /** Link to CSNADES.gg map / guide for full video & angles (attribution). */
+  sourceUrl?: string;
   coordinates?: {
     x: string;
     y: string;

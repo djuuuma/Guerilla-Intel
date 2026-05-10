@@ -17,7 +17,8 @@ import {
   Wifi,
   Clock,
   Layers,
-  Map as MapIcon
+  Map as MapIcon,
+  ExternalLink
 } from 'lucide-react';
 import { MAPS, LINEUPS } from './data';
 import { MapData, Lineup, Side, UtilityType } from './types';
@@ -199,15 +200,23 @@ export default function App() {
                   <button
                     key={lineup.id}
                     onClick={() => handleLineupSelect(lineup)}
-                    className="w-full bg-surface border border-muted p-3 hover:border-primary transition-all text-left group active:bg-muted/20 relative"
+                    className="w-full bg-surface border border-muted p-2 hover:border-primary transition-all text-left group active:bg-muted/20 relative flex gap-3"
                   >
-                    <div className="flex justify-between items-start mb-1.5">
-                       <h3 className="text-xs font-black text-primary uppercase leading-tight font-system">{lineup.origin} &gt; {lineup.target}</h3>
-                       <span className="text-[8px] bg-background border border-muted px-1 text-muted uppercase font-bold">{lineup.tickRate}T</span>
-                    </div>
-                    <div className="flex items-center justify-between text-[9px] text-muted font-bold tracking-tight">
-                       <span className={lineup.difficulty === 'EASY' ? 'text-success' : 'text-accent'}>TEŽINA: {lineup.difficulty}</span>
-                       <span className="opacity-60">{lineup.title}</span>
+                    <img
+                      src={lineup.thumbnail}
+                      alt=""
+                      className="shrink-0 w-24 h-[3.375rem] object-cover border border-muted grayscale-[0.2] opacity-85 group-hover:opacity-100 group-hover:grayscale-0 transition-all"
+                      referrerPolicy="no-referrer"
+                    />
+                    <div className="flex-1 min-w-0">
+                      <div className="flex justify-between items-start mb-1.5 gap-2">
+                         <h3 className="text-xs font-black text-primary uppercase leading-tight font-system">{lineup.origin} &gt; {lineup.target}</h3>
+                         <span className="text-[8px] bg-background border border-muted px-1 text-muted uppercase font-bold shrink-0">{lineup.tickRate}T</span>
+                      </div>
+                      <div className="flex items-center justify-between text-[9px] text-muted font-bold tracking-tight gap-2">
+                         <span className={lineup.difficulty === 'EASY' ? 'text-success' : 'text-accent'}>TEŽINA: {lineup.difficulty}</span>
+                         <span className="opacity-60 truncate">{lineup.title}</span>
+                      </div>
                     </div>
                     <div className="absolute right-2 bottom-2 opacity-0 group-hover:opacity-100 transition-opacity">
                       <Crosshair size={10} className="text-primary" />
@@ -235,7 +244,18 @@ export default function App() {
               <div className="flex-1 overflow-y-auto pb-32">
                 {/* Media Block */}
                 <div className="w-full aspect-video bg-black relative border-b-2 border-primary overflow-hidden group">
-                  <img src={selectedLineup.videoUrl} className="w-full h-full object-contain" referrerPolicy="no-referrer" />
+                  {/\.(mp4|webm)(\?|$)/i.test(selectedLineup.videoUrl) ? (
+                    <video
+                      src={selectedLineup.videoUrl}
+                      className="w-full h-full object-contain"
+                      controls
+                      playsInline
+                      poster={selectedLineup.thumbnail}
+                      referrerPolicy="no-referrer"
+                    />
+                  ) : (
+                    <img src={selectedLineup.videoUrl} alt="" className="w-full h-full object-contain" referrerPolicy="no-referrer" />
+                  )}
                   <ScanlineOverlay />
                   <div className="absolute top-2 left-2 bg-background/90 border border-primary px-2 py-0.5 text-[8px] text-primary flex items-center gap-1.5 font-bold uppercase">
                     <Activity size={10} className="animate-pulse" />
@@ -260,6 +280,18 @@ export default function App() {
                       <span className="text-[11px] font-black text-primary tracking-widest">{selectedLineup.tickRate} TICK</span>
                     </div>
                   </div>
+
+                  {selectedLineup.sourceUrl && (
+                    <a
+                      href={selectedLineup.sourceUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 p-3 border border-primary/40 bg-primary/5 text-[10px] font-bold uppercase tracking-wide text-primary hover:bg-primary/10 transition-colors"
+                    >
+                      <ExternalLink size={14} className="shrink-0" />
+                      <span>Puna demonstracija na CSNADES.gg — otvori u novom tabu</span>
+                    </a>
+                  )}
 
                   <div className="space-y-3">
                     <h3 className="text-[9px] font-black text-muted tracking-[0.3em] uppercase border-b border-muted pb-1 flex justify-between items-center">
